@@ -24,7 +24,7 @@ public class AnotherQuestionServlet extends HttpServlet {
         {
             System.out.println("voi afisa lista ");
 
-            //fac jsonul
+            //fac jsonul - iau din baza de date si pun in json si pe urma returnez json pe response cu returnJsonResponse
             JSONObject json = new JSONObject();
             json.put("questions",SingleList.getInstance().getIntrebari());
             String result=json.toString();
